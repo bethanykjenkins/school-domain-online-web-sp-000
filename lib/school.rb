@@ -23,4 +23,10 @@ class School
     @roster[year]
   end
   
+  def sort
+    @roster.each do |year, student_name|
+      @roster[year] = student_name.sort
+    end
+  end
+  
 end
